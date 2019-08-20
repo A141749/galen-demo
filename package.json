@@ -1,0 +1,22 @@
+{
+  "name": "galen-demo",
+  "version": "1.0.0",
+  "description": "AGL Apps",
+  "private": true,
+  "author": "AGL DST",
+  "sasslintConfig": ".sass-lint.yml",
+  "contributors": [
+    "Matthew Chan<mchan2@agl.com.au>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "test": "ng"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "galenframework-cli": "^2.4.4"
+  }
+}

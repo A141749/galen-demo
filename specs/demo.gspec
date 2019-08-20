@@ -1,0 +1,8 @@
+@objects
+    usernameField   .styled-form__input
+
+= Main Section = 
+    usernameField:
+        width = 400px
+        height > 61px
+        
