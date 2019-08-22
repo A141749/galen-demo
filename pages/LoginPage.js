@@ -13,8 +13,8 @@ this.LoginPage = $page("Login Page", {
         this.passwordField.waitToBeShown();
         this.passwordField.typeText("Whatever1!")
         this.loginBtn.click();
-        // this.loginBtn.waitToBeHidden();
     }
+    
 }, {
     passwordField: ".identity-container__field--password",
     loginBtn: ".identity-container__btn",

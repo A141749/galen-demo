@@ -1,8 +1,13 @@
 @objects
     usernameField   .styled-form__input
+    nextBtn         .btn--primary
 
 = Main Section = 
     usernameField:
         width = 400px
         height > 61px
+    nextBtn:
+        color-scheme 100% #FFE344
+        css background-color is "rgba(255, 227, 68, 1)"
+
         

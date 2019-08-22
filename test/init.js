@@ -1,10 +1,5 @@
 var domain = "www.agl.com.au/";
 var devices = {
-    // mobile: {
-    //     deviceName: "mobile",
-    //     size: "450x800",
-    //     tags: ["mobile"]
-    // },
     // tablet: {
     //     deviceName: "tablet",
     //     size: "600x800",
@@ -12,7 +7,7 @@ var devices = {
     // },
     desktop: {
         deviceName: "desktop",
-        size: "1100x800",
+        size: "1024x768",
         tags: ["desktop"]
     }
 };
@@ -23,12 +18,14 @@ var TEST_USER = {
 };
 
 function openDriver(url, size) {
+    console.log("URL", url);
     var driver = createDriver(null, size);
     session.put("driver", driver);
     if (url != null) {
         if (url.indexOf("http://") != 0 && url.indexOf("https://") != 0) {
             url = "http://" + domain + url;
         }
+        console.log("url:", url);
         driver.get(url);
     }
     else {
@@ -55,6 +52,8 @@ function _test(testNamePrefix, url, callback) {
 };
 
 function testOnAllDevices(testNamePrefix, url, callback) {
+    console.log("test name prefix", testNamePrefix);
+    console.log("url", url);
     forAll(devices, function () {
         _test(testNamePrefix, url, callback);
     });
